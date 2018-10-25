@@ -1,0 +1,30 @@
+create table DetalleProductos
+(
+	Id_Producto varchar(8) FOREIGN KEY REFERENCES Materiales(Id_Material) not null,
+	Morfologia_de_cuadro varchar (max),
+	Tipo_Freno varchar(max),
+	Tipo_Manillar varchar(max),
+	Suspension char(2),
+	Suspension_Silla char(2),
+	Potencia char(2),
+	No_Velocidades smallint,
+	Tallas char(2),
+	Colores char(2),
+	Precio_USD money,
+	Peso_KG float,
+	Cuadro varchar(max),
+	Horquilla varchar(max),
+	Potencia_Material varchar(max),
+	Llantas varchar(max),
+	Tija varchar(max),
+	Manillar varchar(max),
+	Guardafangos char(2),
+	protector_De_Cadena char(2),
+	Timbre char(2),
+	Luz_Delantera char(2),
+	Luz_Trasera char(2),
+	Canasta char(2),
+	Parilla char(2),
+	Caballete char(2)
+	Primary key(Id_Producto)
+)
